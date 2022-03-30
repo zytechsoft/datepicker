@@ -1,5 +1,5 @@
 import { Grid, Text, useMultiStyleConfig } from '@chakra-ui/react'
-import { addDays, format, startOfWeek } from './dayjs-fns'
+import { addDays, format, Locale, startOfWeek } from './dayjs-fns'
 import { useContext } from 'react'
 import { CalendarContext } from './context'
 import { CalendarMonthStyles } from './types'
