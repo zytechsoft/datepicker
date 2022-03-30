@@ -10,6 +10,7 @@
   "license": "Apache-2.0",
   "private": false,
   "scripts": {
+    "prepare": "npm run build",
     "build": "rollup -c",
     "lint": "eslint ./src/**",
     "storybook": "start-storybook -p 6006",
