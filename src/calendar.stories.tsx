@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { ChangeEvent, useRef, useState, useEffect } from 'react'
-import { addDays, format, isAfter, isBefore, isValid, subDays } from 'date-fns'
+import { addDays, format, isAfter, isBefore, isValid, subDays } from './dayjs-fns'
 import {
   Box,
   Button,
@@ -14,7 +14,11 @@ import {
   useOutsideClick,
   VStack,
 } from '@chakra-ui/react'
-import ptBR from 'date-fns/locale/pt-BR'
+//import ptBR from 'date-fns/locale/pt-BR'
+import ptBRLocale from 'dayjs/locale/pt-br'
+const ptBR = {
+  code: ptBRLocale.name
+}
 
 import { Calendar } from './calendar'
 import { CalendarMonth } from './month'

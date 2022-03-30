@@ -3,7 +3,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-A simple datepicker component build with [date-fns][1] and [Chakra-UI][2].
+A simple datepicker component build with [dayjs][1] and [Chakra-UI][2].
 
 ## Table of Contents
 
@@ -13,10 +13,10 @@ A simple datepicker component build with [date-fns][1] and [Chakra-UI][2].
 - [License](#license)
 
 ## Requisites
-You need to install [date-fns][1] and [chakra-ui][2] in order to use this library.
+You need to install [dayjs][1] and [chakra-ui][2] in order to use this library.
 
 ```bash
-yarn add date-fns
+yarn add dayjs
 ```
 
 To install chakra-ui follow their [guide here](https://chakra-ui.com/guides/first-steps#framework-guide).
@@ -159,7 +159,7 @@ Theses changes will produce the following results in Calendar:
 ## License
 This code is under the [Apache-2.0](LICENSE) License
 
-[1]: https://date-fns.org/
+[1]: https://day.js.org/
 [2]: https://chakra-ui.com/
 
 ## Contributors ✨

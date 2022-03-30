@@ -10,7 +10,7 @@ import {
   useDisclosure,
   useOutsideClick,
 } from '@chakra-ui/react'
-import { addMonths, format, isAfter, isBefore, isValid } from 'date-fns'
+import { addMonths, format, isAfter, isBefore, isValid } from './dayjs-fns'
 import {
   Calendar,
   CalendarControls,

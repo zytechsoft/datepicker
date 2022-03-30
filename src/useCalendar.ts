@@ -8,7 +8,7 @@ import {
   isSameMonth,
   subMonths,
   endOfWeek,
-} from 'date-fns'
+} from './dayjs-fns'
 import type { CalendarDate } from './types'
 
 function replaceOutMonthDays(days: CalendarDate[], date: CalendarDate) {

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Locale } from 'date-fns'
+import { Locale } from './dayjs-fns'
 import { CalendarDate } from './types'
 
 export type CalendarContext = {

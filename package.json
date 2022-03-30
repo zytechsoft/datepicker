@@ -1,7 +1,7 @@
 {
   "name": "@uselessdev/datepicker",
   "version": "2.2.1",
-  "description": "A simple react datepicker build with chakra-ui and date-fns",
+  "description": "A simple react datepicker build with chakra-ui and dayjs",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -39,7 +39,7 @@
     "@typescript-eslint/parser": "^5.3.1",
     "all-contributors-cli": "^6.20.0",
     "babel-loader": "^8.2.3",
-    "date-fns": "^2.25.0",
+    "dayjs": "^1.11.0",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -61,7 +61,6 @@
     "@chakra-ui/react": "^1.8.6",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "date-fns": "^2.25.0",
     "framer-motion": "^6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

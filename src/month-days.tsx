@@ -9,7 +9,7 @@ import {
   isSameDay,
   isWeekend,
   startOfMonth,
-} from 'date-fns'
+} from './dayjs-fns'
 import type { CalendarMonthStyles } from './types'
 import { CalendarContext } from './context'
 import { Day } from './day'

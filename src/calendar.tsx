@@ -2,7 +2,7 @@ import * as React from 'react'
 import { useMultiStyleConfig, Flex } from '@chakra-ui/react'
 import { CalendarContext } from './context'
 import { useCalendar } from './useCalendar'
-import { isAfter, isBefore, isSameDay, isValid, Locale } from 'date-fns'
+import { isAfter, isBefore, isSameDay, isValid, Locale } from './dayjs-fns'
 import { CalendarDate, CalendarStyles, CalendarValues, Target } from './types'
 
 export type Calendar = React.PropsWithChildren<{

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Heading, useMultiStyleConfig } from '@chakra-ui/react'
-import { format as dateFormat } from 'date-fns'
+import { format as dateFormat } from './dayjs-fns'
 import { CalendarContext } from './context'
 import { MonthContext } from './month'
 import { CalendarMonthStyles } from './types'

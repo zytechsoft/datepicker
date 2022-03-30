@@ -1,4 +1,4 @@
-import format from 'date-fns/format'
+import { format } from './dayjs-fns'
 import { Button, useStyleConfig } from '@chakra-ui/react'
 import { CalendarDate } from './types'
 
