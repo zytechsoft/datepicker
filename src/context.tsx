@@ -16,6 +16,8 @@ export type CalendarContext = {
   startSelectedDate?: CalendarDate
   endSelectedDate?: CalendarDate
   allowOutsideDays?: boolean
+  disableDatesBeforeDate?: CalendarDate
+  disableDatesAfterDate?: CalendarDate
   disablePastDates?: boolean
   disableFutureDates?: boolean
   disableWeekends?: boolean

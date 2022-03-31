@@ -11,6 +11,8 @@ export type Calendar = React.PropsWithChildren<{
   months?: number
   locale?: Locale
   allowOutsideDays?: boolean
+  disableDatesBeforeDate?: CalendarDate
+  disableDatesAfterDate?: CalendarDate
   disablePastDates?: boolean
   disableFutureDates?: boolean
   disableWeekends?: boolean
@@ -27,6 +29,8 @@ export function Calendar({
   value,
   allowOutsideDays,
   singleDateSelection,
+  disableDatesBeforeDate,
+  disableDatesAfterDate,
   disablePastDates,
   disableFutureDates,
   disableWeekends,
@@ -95,6 +99,8 @@ export function Calendar({
         startSelectedDate: value?.start,
         endSelectedDate: value?.end,
         disableDates,
+        disableDatesBeforeDate,
+        disableDatesAfterDate,
         disableFutureDates,
         disablePastDates,
         disableWeekends,

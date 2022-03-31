@@ -87,6 +87,54 @@ export const CustomLocale: ComponentStory<typeof Calendar> = () => {
   )
 }
 
+export const DisableDatesBeforeDate: ComponentStory<typeof Calendar> = () => {
+  const [dates, setDates] = useState<CalendarValues>({})
+
+  const handleSelectDate = (dates: CalendarValues) => setDates(dates)
+
+  const disableDatesBefore = subDays(new Date(), 7);
+  return (
+    <Calendar value={dates} onSelectDate={handleSelectDate} disableDatesBeforeDate={disableDatesBefore}>
+      <CalendarControls>
+        <CalendarPrevButton />
+        <CalendarNextButton />
+      </CalendarControls>
+
+      <CalendarMonths>
+        <CalendarMonth>
+          <CalendarMonthName />
+          <CalendarWeek />
+          <CalendarDays />
+        </CalendarMonth>
+      </CalendarMonths>
+    </Calendar>
+  )
+}
+
+export const DisableDatesAfterDate: ComponentStory<typeof Calendar> = () => {
+  const [dates, setDates] = useState<CalendarValues>({})
+
+  const handleSelectDate = (dates: CalendarValues) => setDates(dates)
+
+  const disableDatesAfter = addDays(new Date(), 7);
+  return (
+    <Calendar value={dates} onSelectDate={handleSelectDate} disableDatesAfterDate={disableDatesAfter}>
+      <CalendarControls>
+        <CalendarPrevButton />
+        <CalendarNextButton />
+      </CalendarControls>
+
+      <CalendarMonths>
+        <CalendarMonth>
+          <CalendarMonthName />
+          <CalendarWeek />
+          <CalendarDays />
+        </CalendarMonth>
+      </CalendarMonths>
+    </Calendar>
+  )
+}
+
 export const DisablePastDates: ComponentStory<typeof Calendar> = () => {
   const [dates, setDates] = useState<CalendarValues>({})
 

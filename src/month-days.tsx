@@ -23,6 +23,8 @@ export function CalendarDays() {
     startSelectedDate,
     endSelectedDate,
     disableDates,
+    disableDatesBeforeDate: disableDatesBefore,
+    disableDatesAfterDate: disableDatesAfter,
     disableFutureDates,
     disablePastDates,
     disableWeekends,
@@ -76,6 +78,8 @@ export function CalendarDays() {
         }
 
         const isDisabled =
+          (disableDatesBefore && isBefore(day, disableDatesBefore)) ||
+          (disableDatesAfter && isAfter(day, disableDatesAfter)) ||
           (disablePastDates && isBefore(day, new Date())) ||
           (disableFutureDates && isAfter(day, new Date())) ||
           (disableWeekends && isWeekend(day)) ||
