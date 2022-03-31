@@ -23,8 +23,8 @@ export function CalendarDays() {
     startSelectedDate,
     endSelectedDate,
     disableDates,
-    disableDatesBeforeDate: disableDatesBefore,
-    disableDatesAfterDate: disableDatesAfter,
+    disableDatesBeforeDate,
+    disableDatesAfterDate,
     disableFutureDates,
     disablePastDates,
     disableWeekends,
@@ -78,12 +78,16 @@ export function CalendarDays() {
         }
 
         const isDisabled =
-          (disableDatesBefore && isBefore(day, disableDatesBefore)) ||
-          (disableDatesAfter && isAfter(day, disableDatesAfter)) ||
+          (disableDatesBeforeDate && isBefore(day, disableDatesBeforeDate)) ||
+          (disableDatesAfterDate && isAfter(day, disableDatesAfterDate)) ||
           (disablePastDates && isBefore(day, new Date())) ||
           (disableFutureDates && isAfter(day, new Date())) ||
           (disableWeekends && isWeekend(day)) ||
           (disableDates && disableDates.some(date => isSameDay(day, date)))
+
+        if (isDisabled) {
+          variant = undefined;
+        }
 
         return (
           <Day
